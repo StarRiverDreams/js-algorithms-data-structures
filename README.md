@@ -36,21 +36,23 @@ O(n^2)
 The outer loop iterates over array of length N,the inner loop iterates over array of length M.
 O(n*m)
 
-#### ::Identifying runtime complexity (rules of thumb)::
+#### Identifying runtime complexity (rules of thumb)
 
 Iterating over a collection OR using N as a pointer with a for loop  O(n)
 ---
 Iterating over the same collection with nested for loops. O(n^2)
 ---
 Iterating over different  with nested for loops. O(n*m)
-
 ---
+
 #### Simplifying
 * Constants do not matter:
 O(12)->O(1)
 O(n/2)->O(n)
 O(13n^2)->O(n^2)
+---
 [image:90C85954-58A2-4509-A326-709E4C588EE8-298-0004D5E543D247EC/2B7D9C54-A2D7-45B5-82AB-B310048747C7.png]
+---
 
 
 * Smaller Terms do not matter
