@@ -12,6 +12,7 @@ function reverseString(str){
         frontStr = currentStr+frontStr
         return frontStr
     },"")
+    //return str.split("").reverse().join("")
 }
 
 mocha.setup('bdd');
