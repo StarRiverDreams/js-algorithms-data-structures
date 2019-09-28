@@ -31,6 +31,8 @@ function maxChar(str) {
 * -- macChar complexity analysis:
 * time:O(n)
 * space:O(1)
+* 这道题非常常见，这里借助maxCount这个变量的赋值与当前值的大小判断避免了再写一个for循环来找出最大值
+* 难度：🌟🌟
 */
 
 mocha.setup('bdd')
