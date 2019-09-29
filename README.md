@@ -3,7 +3,7 @@
 ## how do we measure code performance(代码性能)？
 fast time
 Use less memory
-ps: Stronger emphasis on the former(更测试fast time)
+ps: Stronger emphasis on the former(更侧重fast time)
 ---
 
 ### Time Complexity

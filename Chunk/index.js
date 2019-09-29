@@ -44,7 +44,6 @@ describe('Array Chunking', () => {
     it('chunk() works', () => {
         let arr = ["a", "b", "c", "d", "e"]
         let chunked = chunk(arr, 2);
-        console.log(chunked)
         assert.deepEqual(chunked, [["a", "b"], ["c", "d"], ["e"]])
     })
 })
