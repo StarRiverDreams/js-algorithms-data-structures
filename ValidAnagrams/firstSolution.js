@@ -17,7 +17,9 @@
     const strA = wordA.replace(/[^A-Za-z]+/g, "").toLowerCase()
     const strB = wordB.replace(/[^A-Za-z]+/g, "").toLowerCase()
 
-    if(strA.length !== strB.length) return false;
+    if(strA.length !== strB.length) {
+      return false
+    }
 
     // use object,key is letter, value is the number of occurrences,like Map structure
     const countObject = {}
@@ -36,6 +38,21 @@
         }
     }
     return true
+
+    // const countArr = []
+    // for(let i=0;i<strA.length;i++){
+    //   let index = strA.charCodeAt(i)-97
+    //   countArr[index] = (countArr[index]||0)+1
+    // }
+    // for(let i=0;i<strB.length;i++){
+    //   let index = strB.charCodeAt(i)-97;
+    //   if(!countArr[index]){
+    //     return false
+    //   }else{
+    //     countArr[index]--
+    //   }
+    // }
+
  }
  /**
   * (leetcode 242 难度：🌟🌟🌟）
