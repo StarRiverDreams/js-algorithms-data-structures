@@ -11,18 +11,18 @@
 
 function caesarCipher(str, shift) {
     let output = '';
-    for(let i = 0; i< str.length;i++){
+    for (let i = 0; i < str.length; i++) {
         let currentChar = str[i]
-        if(currentChar.match(/[a-z]/i)){
+        if (currentChar.match(/[a-z]/i)) {
             let code = str.charCodeAt(i)
-            if(code>=65&&code<=90){
-                currentChar = String.fromCharCode((code-65+shift)%26+65)
+            if (code >= 65 && code <= 90) {
+                currentChar = String.fromCharCode((code - 65 + shift) % 26 + 65)
             }
-            if(code>=97&&code<=122){
-                currentChar = String.fromCharCode((code-97+shift)%26+97)
+            if (code >= 97 && code <= 122) {
+                currentChar = String.fromCharCode((code - 97 + shift) % 26 + 97)
             }
         }
-        output+=currentChar
+        output += currentChar
     }
     return output;
 }
