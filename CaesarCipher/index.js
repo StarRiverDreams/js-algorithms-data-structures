@@ -6,7 +6,7 @@
  * --Examples
  * caesarCipher("abcd",1) === "bcde"
  * caesarCipher("abcd",100) === "wxyz"
- * caesarCipher("gurer ner 9 qbtf!",13)
+ * caesarCipher("gurer ner 9 qbtf!",13) === "there are 9 dogs!"
  */
 
 function caesarCipher(str, shift) {
